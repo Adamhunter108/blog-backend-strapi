@@ -112,3 +112,6 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+# trying to fix data reset issue on Heroku
+package-lock.json
