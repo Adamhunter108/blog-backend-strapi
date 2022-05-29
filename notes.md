@@ -41,4 +41,48 @@ module.exports = ({ env }) => ({
 ```
 Add env variables
 
-Modify middlewear config
+Modify `./config/middlewear.js `:
+Replace `'strapi::security',` with the following:
+```javascript
+module.exports = [
+  // ...
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'connect-src': ["'self'", 'https:'],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            'yourBucketName.s3.yourRegion.amazonaws.com',
+          ],
+          'media-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            'yourBucketName.s3.yourRegion.amazonaws.com',
+          ],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
+  // ...
+];
+```
+Then obviously go in and fill in personal AWS deets.  
+Then add AWS Policy Actions:
+```json
+"Action": [
+  "s3:PutObject",
+  "s3:GetObject",
+  "s3:ListBucket",
+  "s3:DeleteObject",
+  "s3:PutObjectAcl"
+],
+```
