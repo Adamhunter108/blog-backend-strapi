@@ -115,3 +115,5 @@ build
 
 # trying to fix data reset issue on Heroku
 package-lock.json
+notes.md
+notes.md
