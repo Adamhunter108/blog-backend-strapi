@@ -86,3 +86,6 @@ Then add AWS Policy Actions:
   "s3:PutObjectAcl"
 ],
 ```
+
+### `for Cloudinary`
+[Cloudinary Provider](https://www.npmjs.com/package/@strapi/provider-upload-cloudinary)

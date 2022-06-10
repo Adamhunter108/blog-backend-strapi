@@ -1,7 +1,7 @@
 # blog-backend-strapi
 
 ### `About:`
-This is the backend CMS that is powering a `Next.js` blog.  
+This is a Strapi backend CMS that is powering the [blog](https://www.adamhunter.website/blog) of a [Next.js project](https://github.com/Adamhunter108/adam-nextjs-site).  
 
 ### `Tech Stack:`
 | JavaScript | Node.js | PostgreSQL | Heroku | Strapi | Cloudinary | AWS
