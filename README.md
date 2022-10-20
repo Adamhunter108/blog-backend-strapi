@@ -1,5 +1,10 @@
 # blog-backend-strapi
 
+---
+## ⚠️ Warning ⚠️
+This repository has been deprecated.  Please see [github.com/Adamhunter108/strapi-railway](https://github.com/Adamhunter108/strapi-railway) for the current version.
+---
+
 ### `About:`
 This is a Strapi backend CMS that is powering the [blog](https://www.adamhunter.website/blog) of a [Next.js project](https://github.com/Adamhunter108/adam-nextjs-site).  
 
